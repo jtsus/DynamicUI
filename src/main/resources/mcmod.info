@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "DynamicUI",
+        "name": "DynamicUI",
+        "description": "",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "",
+        "updateUrl": "",
+        "authorList": [],
+        "credits": "",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]
