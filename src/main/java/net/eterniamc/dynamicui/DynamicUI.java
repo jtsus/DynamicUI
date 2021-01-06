@@ -185,10 +185,12 @@ public abstract class DynamicUI {
     }
 
     public boolean onClose() {
-        for (DynamicUI responder : responders) {
-            responder.close();
-        }
         player = null;
+        for (DynamicUI responder : responders) {
+            if (responder.isValid()) {
+                responder.close();
+            }
+        }
         InterfaceController.INSTANCE.getActiveInterfaces().remove(this);
 
         return true;
